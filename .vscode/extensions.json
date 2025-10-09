@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "mkhl.direnv",
+        "nodamushi.udon",
+        "negokaz.zenn-editor"
+        "streetsidesoftware.code-spell-checker",
+        "davidanson.vscode-markdownlint",
+        "3w36zj6.textlint"
+    ]
+}

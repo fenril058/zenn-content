@@ -1,0 +1,22 @@
+[formatter.md]
+command = "markdownlint-cli2"
+options = ["--config", "linter/.markdownlint-cli2.jsonc"]
+includes = ["articles/*.md"]
+priority = 1
+
+[formatter.text]
+command = "textlint"
+options = ["--config", "linter/.textlintrc.json"]
+includes = ["articles/*.md"]
+priority = 2
+
+[formatter.url]
+command = "lychee"
+options = ["--config", "linter/lychee.toml"]
+includes = ["articles/*.md"]
+priority = 3
+
+[formatter.spell]
+command = "cspell"
+includes = ["articles/*.md"]
+priority = 4

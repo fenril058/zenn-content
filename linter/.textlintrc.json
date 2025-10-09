@@ -1,0 +1,20 @@
+{
+    "plugins": {},
+    "filters": {
+        "comments": true
+    },
+    "rules": {
+        "preset-ja-technical-writing": {
+            "ja-no-weak-phrase": false,
+            "ja-no-mixed-period": {
+                "allowPeriodMarks": [":"]
+            },
+            "no-exclamation-question-mark": false
+        },
+        "terminology": {
+            "exclude": [
+                "V[ -]?S[ -]?Code"
+            ]
+        }
+    }
+}
