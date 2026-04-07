@@ -19,6 +19,7 @@
       {
         devShells.default = pkgs.mkShell {
           packages = [
+            pkgs.just
             pkgs.treefmt
             pkgs.lychee
             importNpmLock.hooks.linkNodeModulesHook
