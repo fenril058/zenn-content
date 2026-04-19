@@ -23,6 +23,11 @@ Note：記事のFront Matterを指定するには以下のようにする。
 zenn new:article --slug 記事のスラッグ --title タイトル --type idea --emoji ✨
 ```
 
+### for Emacs
+
+- [Emacs で Zenn への投稿・更新を簡単にする](https://zenn.dev/megeton/articles/66b3769294b04b)
+- [org-modeドキュメントからZenn Flavored Markdownを生成するox-zennの使い方](https://zenn.dev/conao3/articles/ox-zenn-usage)
+
 ## 記事作成の流れ
 
 1. git ブランチ作成する。
