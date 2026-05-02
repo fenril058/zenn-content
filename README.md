@@ -25,8 +25,8 @@ zenn new:article --slug 記事のスラッグ --title タイトル --type idea -
 
 ### for Emacs
 
+- [Zennの投稿コンテンツをOrg Modeで書く](https://zenn.dev/msnoigrs/books/zenn-no-toukou-kontentsu-wo-org-mode-de-kaku)
 - [Emacs で Zenn への投稿・更新を簡単にする](https://zenn.dev/megeton/articles/66b3769294b04b)
-- [org-modeドキュメントからZenn Flavored Markdownを生成するox-zennの使い方](https://zenn.dev/conao3/articles/ox-zenn-usage)
 
 ## 記事作成の流れ
 

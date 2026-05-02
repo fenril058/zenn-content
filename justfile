@@ -2,6 +2,16 @@
 help:
     just -l
 
+# ox-yazenn
+emacs := "emacs --batch --no-init-file --load my-zenn-publish.el"
+# publish by ox-yazenn
+org-publish:
+    {{emacs}} --eval "(org-publish \"zenn\")"
+
+# force publish by ox-yazenn
+org-force-publish:
+    {{emacs}} --eval "(org-publish \"zenn\" t)"
+
 # Zenn
 treefmt_config := "./linter/treefmt.toml"
 lint:
