@@ -50,6 +50,14 @@
             pkgs.npm-check-updates
           ];
         };
+
+        formatter = pkgs.writeShellApplication {
+          name = "treefmt";
+          runtimeInputs = [ pkgs.treefmt ];
+          text = ''
+          treefmt --config-file ./.config/treefmt.toml
+          '';
+        };
       }
     );
 }
