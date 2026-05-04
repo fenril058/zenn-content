@@ -1,18 +1,18 @@
 [formatter.md]
 command = "markdownlint-cli2"
-options = ["--config", "linter/.markdownlint-cli2.jsonc"]
+options = ["--config", ".config/.markdownlint-cli2.jsonc"]
 includes = ["*.md"]
 priority = 1
 
 [formatter.text]
 command = "textlint"
-options = ["--config", "linter/.textlintrc.json"]
+options = ["--config", ".config/textlintrc.json"]
 includes = ["*.md"]
 priority = 2
 
 [formatter.url]
 command = "lychee"
-options = ["--config", "linter/lychee.toml"]
+options = ["--config", ".config/lychee.toml"]
 includes = ["*.md"]
 priority = 3
 

@@ -1,9 +1,10 @@
 # show recipe list
-help:
-    just -l
+_:
+    @just --list
 
 # ox-yazenn
 emacs := "emacs --batch --no-init-file --load my-zenn-publish.el"
+
 # publish by ox-yazenn
 org-publish:
     {{emacs}} --eval "(org-publish \"zenn\")"
@@ -12,17 +13,22 @@ org-publish:
 org-force-publish:
     {{emacs}} --eval "(org-publish \"zenn\" t)"
 
-# Zenn
-treefmt_config := "./linter/treefmt.toml"
-lint:
-    treefmt --config-file {{treefmt_config}}
 
+treefmt_config := "./.config/treefmt.toml"
+
+# run treefmt (with '-c' can clear cache)
+lint flags='':
+    treefmt {{flags}} --config-file {{treefmt_config}}
+
+# new article with Zenn CLI
 new:
     zenn new:article --emoji 🌿 --published false
 
+# new book with Zenn CLI
 new-book:
     zenn new:article --emoji 📘 --published false
 
+# preview with Zenn CLI
 preview:
     zenn preview
 
