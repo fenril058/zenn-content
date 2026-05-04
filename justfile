@@ -38,28 +38,35 @@ NODE_PKGS := "./node-pkgs"
 RUN_NODE := "cd " + NODE_PKGS + " && " + NODE_SHELL
 RELOAD := "direnv reload"
 
+# check update by ncu
 check:
     {{RUN_NODE}} ncu
 
+# npm audit
 audit:
     - {{RUN_NODE}} npm audit
 
+# npm audit fix
 audit-fix:
     - {{RUN_NODE}} npm audit fix
 
+# update node packages by ncu -u
 update-packages:
     {{RUN_NODE}} ncu -u
     {{RELOAD}}
 
+# update and install node packages
 update: update-packages
     {{RUN_NODE}} npm install --package-lock-only
     {{RELOAD}}
 alias up := update
 
+# npm install -D --package-lock-only
 install package:
     {{RUN_NODE}} npm install -D {{package}} --package-lock-only
     {{RELOAD}}
 
+# npm uninstall -D --package-lock-only
 uninstall package:
     {{RUN_NODE}} npm uninstall -D {{package}} --package-lock-only
     {{RELOAD}}
