@@ -1,8 +1,33 @@
+#############################  Display  #############################
+# Verbose program output
+# Accepts log level: "error", "warn", "info", "debug", "trace"
+verbose = "warn"
+
+#############################  Runtime  #############################
+
 # Maximum number of allowed retries before a link is declared dead.
 max_retries = 2
+
+#############################  Requests  ############################
+
+# User agent to send with each request.
+# user_agent = "Mozilla/5.0"
 
 # Website timeout from connect to response finished.
 timeout = 10
 
-# Root path to use when checking absolute local links, must be an absolute path
-root_dir = "~/ghq/github.com/fenril058/zenn-content"
+# Minimum wait time in seconds between retries of failed requests.
+retry_wait_time = 2
+
+# Custom request headers
+header = {
+    "accept" = "text/html, application/pdf",
+    "x-custom-header"= "value"
+}
+
+
+#############################  Exclusions  ##########################
+
+exclude = [
+
+]

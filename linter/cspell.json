@@ -1,9 +1,28 @@
 {
-    "version": "0.2",
-    "files": [
-        "articles/*.md"
-    ],
-    "words": [
-        "Zenn"
-    ]
+  "version": "0.2",
+  "files": [
+    "articles/*.md"
+  ],
+  "words": [
+    "Zenn",
+    "Qiita",
+    "GNUmakefile",
+    "nixpkgs",
+    "treefmt",
+    "pkgs",
+    "tself",
+    "eself",
+    "esuper",
+    "tsuper",
+    "twistnix",
+    "elisp",
+    "elpa",
+    "auctex",
+    "texlive",
+    "poppler",
+    "autoreconf",
+    "bindir",
+    "kyure",
+    "akirak",
+  ]
 }
