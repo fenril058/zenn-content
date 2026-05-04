@@ -1,7 +1,7 @@
 {
 
-    "textlint.configPath": "~/ghq/github.com/fenril058/zenn-content/linter/textlintrc.json",
-    "markdownlint.configFile": "~/ghq/github.com/fenril058/zenn-content/linter/.markdownlint-cli2.jsonc",
+    "textlint.configPath": "~/ghq/github.com/fenril058/zenn-content/.config/textlintrc.json",
+    "markdownlint.configFile": "~/ghq/github.com/fenril058/zenn-content/.config/.markdownlint-cli2.jsonc",
 
     "udon.baseDirectories": [
         ["articles/*.md", "${workspaceFolder}/images/$fileBasenameNoExtension"]
