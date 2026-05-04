@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# リモート追跡ブランチがない（新規ブランチ）場合は main と比較、それ以外は追跡先と比較
+UPSTREAM=$(git rev-parse --abbrev-ref @{u} 2>/dev/null || echo "main")
+
+echo "Comparing with $UPSTREAM..."
+
+git diff --name-only -z "$UPSTREAM..HEAD" \
+  | xargs -0 -r treefmt --config-file "linter/treefmt.toml" --fail-on-change

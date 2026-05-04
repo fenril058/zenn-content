@@ -51,9 +51,9 @@ update: update-packages
 alias up := update
 
 install package:
-    {{RUN_NODE}} "npm install -D " + package + " --package-lock-only"
+    {{RUN_NODE}} npm install -D {{package}} --package-lock-only
     {{RELOAD}}
 
 uninstall package:
-    {{RUN_NODE}} "npm uninstall -D " + package + " --package-lock-only"
+    {{RUN_NODE}} npm uninstall -D {{package}} --package-lock-only
     {{RELOAD}}
