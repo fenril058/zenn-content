@@ -1,20 +1,26 @@
 {
-    "plugins": {},
-    "filters": {
-        "comments": true
+  "plugins": {},
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-weak-phrase": false,
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [":"]
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "",
+        "preferInList": "",
+        "strict": false
+      },
+      "no-exclamation-question-mark": false
     },
-    "rules": {
-        "preset-ja-technical-writing": {
-            "ja-no-weak-phrase": false,
-            "ja-no-mixed-period": {
-                "allowPeriodMarks": [":"]
-            },
-            "no-exclamation-question-mark": false
-        },
-        "terminology": {
-            "exclude": [
-                "V[ -]?S[ -]?Code"
-            ]
-        }
+    "terminology": {
+      "exclude": [
+        "V[ -]?S[ -]?Code"
+      ]
     }
+  }
 }

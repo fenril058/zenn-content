@@ -1,6 +1,6 @@
 {
 
-    "textlint.configPath": "~/ghq/github.com/fenril058/zenn-content/linter/.textlintrc.json",
+    "textlint.configPath": "~/ghq/github.com/fenril058/zenn-content/linter/textlintrc.json",
     "markdownlint.configFile": "~/ghq/github.com/fenril058/zenn-content/linter/.markdownlint-cli2.jsonc",
 
     "udon.baseDirectories": [

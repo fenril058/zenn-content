@@ -8,6 +8,7 @@
     "Qiita",
     "GNUmakefile",
     "nixpkgs",
+    "numtide",
     "treefmt",
     "pkgs",
     "tself",
@@ -24,5 +25,7 @@
     "bindir",
     "kyure",
     "akirak",
+    "ryuryu",
+    "stdenv"
   ]
 }

@@ -29,5 +29,5 @@ header = {
 #############################  Exclusions  ##########################
 
 exclude = [
-
+  "https://www.gnu.org/"
 ]
