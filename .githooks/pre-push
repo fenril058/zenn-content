@@ -7,4 +7,4 @@ UPSTREAM=$(git rev-parse --abbrev-ref @{u} 2>/dev/null || echo "main")
 echo "Comparing with $UPSTREAM..."
 
 git diff --name-only -z "$UPSTREAM..HEAD" \
-  | xargs -0 -r treefmt --config-file "linter/treefmt.toml" --fail-on-change
+  | xargs -0 -r treefmt --config-file ".config/treefmt.toml" --fail-on-change
