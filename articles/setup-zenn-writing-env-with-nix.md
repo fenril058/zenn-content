@@ -3,7 +3,7 @@ title: "Nixで整えるZennローカル執筆環境"
 emoji: "❄️"
 type: "tech"
 topics: ["nix","zenncli","emacs","orgmode","vscode"]
-published: false
+published: true
 ---
 
 # はじめに
