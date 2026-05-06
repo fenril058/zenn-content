@@ -15,7 +15,8 @@
         "preferInList": "",
         "strict": false
       },
-      "no-exclamation-question-mark": false
+      "no-exclamation-question-mark": false,
+      "no-doubled-joshi": false
     },
     "terminology": {
       "exclude": [
