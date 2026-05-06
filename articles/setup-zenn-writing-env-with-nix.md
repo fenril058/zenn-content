@@ -538,7 +538,7 @@ https://github.com/textlint-rule/textlint-rule-prh
 
 あとはlinterではありませんが、最近流行りの[gitleaks](https://github.com/gitleaks/gitleaks)も導入しました。これも[secretlint](https://github.com/secretlint/secretlint)と迷いましたが、簡単そうなgitleaksにしました。どちらにせよnodeは使っているわけで別にsecretlintの導入障壁もそれほどではないと思います。
 
-# あとがき
+# おわりに
 
 少なくともこの記事と前の記事は快適に書けている実感があります。日本語で情報を提供してくださった[trifolium](https://zenn.dev/trifolium)さん、[megeton](https://zenn.dev/megeton)さん、[msnoigrs](https://zenn.dev/msnoigrs)さんに感謝します。
 
