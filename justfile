@@ -70,3 +70,6 @@ install package:
 uninstall package:
     {{RUN_NODE}} npm uninstall -D {{package}} --package-lock-only
     {{RELOAD}}
+
+reload:
+    {{RELOAD}}
