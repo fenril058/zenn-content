@@ -1,5 +1,5 @@
 ---
-title: "textlint-plugin-orgをの修正を試みる1"
+title: "textlint-plugin-orgの修正を試みる1"
 emoji: "🌟"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [emacs,orgmode,javascript,typescript,textlint]
