@@ -1,7 +1,9 @@
+Asciidoctor
 GNUmakefile
 Qiita
 Zenn
 akirak
+alist
 auctex
 autoreconf
 bindir
@@ -16,6 +18,7 @@ elpa
 envrc
 eself
 esuper
+flycheck
 kakubase
 kyure
 mkhl
@@ -25,11 +28,13 @@ nixpkgs
 nodamushi
 nondirectory
 numtide
+orga
 orgmode
 pkgs
 poppler
 ryuryu
 sarticles
+shiguredo
 stdenv
 texlive
 textlint
