@@ -15,6 +15,9 @@
         "preferInList": "",
         "strict": false
       },
+      "ja-no-successive-word": {
+        "allow": ["…"]
+       },
       "no-exclamation-question-mark": false,
       "no-doubled-joshi": false
     },
