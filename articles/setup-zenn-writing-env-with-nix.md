@@ -493,6 +493,16 @@ https://zenn.dev/megeton/articles/66b3769294b04b
 なお、wslstartは以下のリポジトリのものです。WSL環境でのopen相当を実現します。
 https://github.com/smzht/wsl-utils
 
+## flycheck-modeの設定【追記】
+
+デフォルトの設定だとflycheckは.config/以下は読んでくれないので以下のように書いておきましょう。
+
+```emacs-lisp
+(eval-after-load 'flycheck
+  (add-to-list 'flycheck-textlint-config ".config/textlintrc.json")
+  (add-to-list 'flycheck-markdown-markdownlint-cli2-config  ".config/.markdownlint-cli2.jsonc"))
+```
+
 # VS Code
 
 元の記事で紹介されている構成で完成度が高く、特段追加の必要は感じませんでした。
