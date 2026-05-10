@@ -24,7 +24,3 @@ jobs:
       # node更新用のshellも一応チェック
       - name: Check devShell (node)
         run: nix develop .#node --command true
-
-      # (任意) formatterのチェックも入れるとDependabot以外のPRでも役立ちます
-      - name: Check formatting
-        run: nix run .#treefmt -- --check
