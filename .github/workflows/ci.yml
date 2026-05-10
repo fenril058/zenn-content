@@ -1,0 +1,30 @@
+name: "CI"
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-nix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: determinatesystems/nix-installer-action@v14
+
+      - name: Magic Nix Cache
+        uses: determinatesystems/magic-nix-cache-action@v11
+
+      # devShells.default が正常にビルド（インスタンス化）できるかチェック
+      - name: Check devShell (default)
+        run: nix develop .#default --command true
+
+      # node更新用のshellも一応チェック
+      - name: Check devShell (node)
+        run: nix develop .#node --command true
+
+      # (任意) formatterのチェックも入れるとDependabot以外のPRでも役立ちます
+      - name: Check formatting
+        run: nix run .#treefmt -- --check
