@@ -8,14 +8,19 @@ on:
 jobs:
   check-nix:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
 
       - name: Install Nix
-        uses: determinatesystems/nix-installer-action@v14
+        uses: determinatesystems/nix-installer-action@v22
 
       - name: Magic Nix Cache
-        uses: determinatesystems/magic-nix-cache-action@v11
+        uses: determinatesystems/magic-nix-cache-action@v13
+        with:
+          use-flakehub: false
 
       # devShells.default が正常にビルド（インスタンス化）できるかチェック
       - name: Check devShell (default)
