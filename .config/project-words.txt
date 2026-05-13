@@ -29,6 +29,7 @@ nodamushi
 nondirectory
 numtide
 orga
+orgajs
 orgmode
 pkgs
 poppler
@@ -43,6 +44,8 @@ treefmt
 tself
 tsuper
 twistnix
+unifiedjs
+unvalidated
 vertico
 wslstart
 yazenn
