@@ -13,6 +13,7 @@ published: true
 - packageのupdateを試みて[orga](https://orga.js.org/)以外はできた。
 - しかし、orgaはv2からv4で大きく設計が変わっており、このままでの対応は困難だった。
 - そして、date-fnsのバージョンはorga v2由来なので直せなかった。
+  - 【追記】そんなことなかった。直せていた。
 - 次回に期待。
 
 ## モチベーション
@@ -232,6 +233,9 @@ Before → After
 
 https://github.com/fenril058/textlint-plugin-org/commit/26518b873b0d817ac5e47952d4afd4a53b6513f0
 
+【追記】履歴を整理したのでcommit hashが変わりました。というより前に載せたものが履歴を破壊したあとのものでした。同一内容ですが新しいものも載せておきます。
+https://github.com/fenril058/textlint-plugin-org/commit/4337d621915c5561b5dcf38dc2ce8d0004502782
+
 成果として、指摘される脆弱性はなくなっています。また、`npm outdated`の結果は以下になります。
 
 ```sh
@@ -368,8 +372,10 @@ node.type = nodeTypes[node.type];
 ```
 
 これでtestもpassし、ESLint v10でも問題なく、TypeScript v6でbuildもできるコードになりました。
-
 https://github.com/fenril058/textlint-plugin-org/commit/d13b42d9faf2ba7dbe8a063303cec182bfa94771
+
+【追記】履歴を整理したのでcommit hashが変わりました。というより前に載せたものが履歴を破壊したあとのものでした。同一内容ですが新しいものも載せておきます。
+https://github.com/kijimad/textlint-plugin-org/commit/16672ecce42149cb1871a19a076e66fc28a7da7d
 
 #### そもそも論
 
