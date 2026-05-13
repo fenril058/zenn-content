@@ -24,13 +24,16 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          packages = [
+          packages = with pkgs; [
             importNpmLock.hooks.linkNodeModulesHook
             nodejs
-            pkgs.just
-            pkgs.treefmt
-            pkgs.lychee
-            pkgs.gitleaks
+            just
+            treefmt
+            lychee
+            gitleaks
+            pinact
+            zizmor
+            ghalint
           ];
 
           npmDeps = importNpmLock.buildNodeModules {
