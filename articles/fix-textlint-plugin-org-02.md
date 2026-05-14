@@ -27,7 +27,7 @@ https://zenn.dev/ril/articles/fix-textlint-plugin-org-01
 - orga v2相当をtextlint-plugin-org側で実装する。
 - orga v4にupdateしてunified eco-systemにのっかる。
 
-今回の記事は、claude code (opus 4.7, sonnet 4.6) を使って後者の方針で実装できましたというお話です。最終決結果は以下のコミットです。
+今回の記事は、claude code (opus 4.7, sonnet 4.6) を使って後者の方針で実装できましたというお話です。最終結果は以下のコミットです。
 
 https://github.com/fenril058/textlint-plugin-org/commit/6735dad17ce8fb57765b94c44524c984d38e0dbc
 
@@ -302,3 +302,7 @@ https://github.com/fenril058/textlint-plugin-org/commit/6735dad17ce8fb57765b94c4
 今回改修したものを本家にPull requestするかは悩んでいます。大胆に変えてしまった部分もあるし、そもそもメンテナンスされていなさそうですし。もともとGPL v3で公開されてるpackageですし、同ライセンスで別名で公開するのがよさそうでしょうか。
 
 これを書くにあたり他のtextlint-pluginも調べたのですが、他の形式のメンテナンス状況も思わしくなさそうでした。Markdown形式の覇権を感じます。
+
+### 追記
+
+最近supply chain攻撃がアレなのでnpm系は特にチェックが必要ですね。
