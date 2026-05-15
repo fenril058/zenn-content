@@ -1,6 +1,6 @@
 Asciidoctor
-Frenkel
 Brunswik
+Frenkel
 GNUmakefile
 Qiita
 Zenn
@@ -10,6 +10,7 @@ auctex
 autoreconf
 bindir
 cadr
+cmdline
 davidanson
 defvar
 dired
