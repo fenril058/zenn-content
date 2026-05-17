@@ -2,6 +2,7 @@ Asciidoctor
 Brunswik
 Frenkel
 GNUmakefile
+Noogle
 Qiita
 Zenn
 akirak
@@ -12,6 +13,7 @@ bindir
 cadr
 cmdline
 davidanson
+defun
 defvar
 dired
 dired
@@ -23,6 +25,7 @@ eself
 esuper
 flycheck
 kakubase
+keymap
 kyure
 mkhl
 negokaz
@@ -38,6 +41,7 @@ pkgs
 poppler
 ryuryu
 sarticles
+sawa
 shiguredo
 stdenv
 texlive
