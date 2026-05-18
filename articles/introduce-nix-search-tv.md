@@ -131,7 +131,9 @@ mode = "fork"
 
 https://github.com/fenril058/consult-nix-search-tv
 
-ANSI color escape sequenceがそのまま流れてくるので`ansi-color-filter-apply`を使うのがポイントです（ChatGPT無料版が教えてくれました）。本当は`nix-search-tv`側にcolor disable optionがあればおいのですがどうやらなさそう？
+ANSI color escape sequenceがそのまま流れてくるので`ansi-color-filter-apply`を使うのがポイントです（ChatGPT無料版が教えてくれました）。本当は`nix-search-tv`側にcolor disable optionがあればよいのですがどうやらなさそうです。
+
+【追記】指針版ではfilterで落とすのではなく、`ansi-color-apply-on-region`で色を反映するようにしてみました。なお、ヘッダーでEmacs 30を要求していますが、必要ないとは思います。
 
 先程のtelevisionの例と同様に、browserで開けると便利です。例えばembarkで書くならこんな感じかと思います。
 
@@ -172,3 +174,5 @@ ANSI color escape sequenceがそのまま流れてくるので`ansi-color-filter
 ```
 
 これは上記リポジトリには入れていませんが、あとで追加しておこうかなと思います。
+
+【追記】追加しました。
